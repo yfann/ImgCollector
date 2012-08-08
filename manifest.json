@@ -1,15 +1,12 @@
 {
   "name": "ImgCollector",
   "version": "1.0",
-  "description": "图片批量下载",
+  "description": "download images",
   "permissions": ["tabs", "http://*/", "https://*/"],
-  "content_scripts":[
-  {
-	 "matches":["http://*/*"],
-	 "js":["jquery-1.4.1.min.js","contentscript.js"]
-  }],
+  "background":{
+	 "scripts":["default.js"]	
+  },
   "browser_action": {
-    "default_icon": "icon.gif",
-	"popup":"popup.html"
+    "default_icon": "images/icon.gif"
   }
 }
