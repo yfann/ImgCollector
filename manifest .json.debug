@@ -3,10 +3,7 @@
   "version": "1.0",
   "description": "download images",
   "permissions": ["tabs", "http://*/*", "https://*/*"],
-  "content_scripts":[{
-	"matches":["http://*/*"],
-	"js":["jquery.js","float.js","base.js","contentscript.js"]
-  }],
+  "background":{"scripts":["default.js"]},
   "browser_action": {
     "default_icon": "icon.gif"
   }
