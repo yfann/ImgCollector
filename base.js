@@ -1,6 +1,13 @@
 console.log("base script loaded");
 var imges = [];
 var imgUrls = [];
+imges.contains = function (arr) {
+    for (var i = 0; i < this.length; i++) {
+        if (this[i] == arr)
+            return true;
+    }
+    return false;
+}
 $("<div/>").attr({ id: "div_oprationpanel" })
         .css({
             border: "solid 1px green",
